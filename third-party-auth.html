@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Third Party Authorisation - William Russell</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="topbar__mobile-menu" aria-label="Menu">&#x2630;</button>
+    <a href="dashboard.html" class="topbar__logo">William Russell<span class="dot"></span></a>
+    <div class="topbar__actions">
+      <button class="topbar__referral">Earn US$100</button>
+      <button class="topbar__icon-btn" aria-label="Notifications">&#x1F514;<span class="badge">2</span></button>
+      <button class="topbar__icon-btn" aria-label="Call us">&#x1F4DE;</button>
+      <button class="topbar__user"><span class="topbar__avatar">NS</span><span>Name Surname</span><span>&#x203A;</span></button>
+    </div>
+  </header>
+
+  <div class="app-layout">
+    <nav class="sidebar" aria-label="Main navigation">
+      <button class="sidebar__collapse" aria-label="Collapse sidebar">&#x2039;</button>
+      <button class="sidebar__submit-claim">Submit a claim</button>
+      <div class="sidebar__nav">
+        <a href="dashboard.html" class="sidebar__nav-item sidebar__nav-item--active"><span>&#x1F4CA; Dashboard</span><span class="sidebar__nav-arrow">&#x203A;</span></a>
+        <a href="claims.html" class="sidebar__nav-item"><span>&#x1F4CB; Claims</span><span class="sidebar__nav-arrow">&#x203A;</span></a>
+        <a href="#" class="sidebar__nav-item"><span>&#x1F4C4; Documents</span><span class="sidebar__nav-arrow">&#x203A;</span></a>
+        <a href="#" class="sidebar__nav-item"><span>&#x2B50; Elevate</span><span class="sidebar__nav-arrow">&#x203A;</span></a>
+      </div>
+      <div class="sidebar__footer">
+        <div class="sidebar__emergency"><strong>24hr multilingual emergency helpline</strong>+44 (0) 1243 621 155</div>
+        <button class="sidebar__logout">&#x2190; Log out</button>
+      </div>
+    </nav>
+
+    <main class="main-content">
+      <div class="main-content__inner" style="max-width: 640px;">
+        <div class="breadcrumbs">
+          <a href="dashboard.html">Dashboard</a>
+          <span class="breadcrumbs__sep">&gt;</span>
+          <a href="plan-health-view.html">View plan details</a>
+          <span class="breadcrumbs__sep">&gt;</span>
+          <span class="breadcrumbs__current">Third party authorisation</span>
+        </div>
+
+        <h1 style="font-size: var(--font-size-3xl); font-weight: 700; margin-bottom: var(--space-md);">Third party authorisation</h1>
+        <p class="text-grey" style="margin-bottom: var(--space-2xl); line-height: 1.6;">
+          You can authorise a trusted person to contact William Russell and discuss or access information regarding your policy on your behalf.
+        </p>
+
+        <form>
+          <div class="form-group">
+            <label for="title">Title</label>
+            <div class="form-input-wrapper">
+              <select id="title" class="form-input form-input--with-icon">
+                <option value="">Select your title</option>
+                <option>Mr</option>
+                <option>Mrs</option>
+                <option>Ms</option>
+                <option>Dr</option>
+              </select>
+              <span class="input-icon">&#x1F464;</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="first-name">First name</label>
+            <div class="form-input-wrapper">
+              <input type="text" id="first-name" class="form-input form-input--with-icon" placeholder="Enter your first name">
+              <span class="input-icon">&#x1F464;</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="last-name">Last name</label>
+            <div class="form-input-wrapper">
+              <input type="text" id="last-name" class="form-input form-input--with-icon" placeholder="Enter your last name">
+              <span class="input-icon">&#x1F464;</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="sex">Sex</label>
+            <div class="form-input-wrapper">
+              <select id="sex" class="form-input form-input--with-icon">
+                <option value="">Input value</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+              </select>
+              <span class="input-icon">&#x1F464;</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Date of birth <span class="optional">(Optional)</span></label>
+            <div class="date-inputs">
+              <input type="text" class="form-input" placeholder="dd" maxlength="2" style="max-width: 80px;">
+              <input type="text" class="form-input" placeholder="mm" maxlength="2" style="max-width: 80px;">
+              <input type="text" class="form-input" placeholder="yyyy" maxlength="4" style="max-width: 100px;">
+              <button type="button" class="calendar-btn" aria-label="Open calendar">&#x1F4C5;</button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="relationship">Relationship to member <span class="optional">(Optional)</span></label>
+            <div class="form-input-wrapper">
+              <select id="relationship" class="form-input form-input--with-icon">
+                <option value="">Your relationship to the policyholder</option>
+                <option>Spouse</option>
+                <option>Parent</option>
+                <option>Child</option>
+                <option>Sibling</option>
+                <option>Other</option>
+              </select>
+              <span class="input-icon">&#x2665;</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Telephone number</label>
+            <div class="phone-input">
+              <div class="phone-input__country">
+                <span>&#x1F1F1;&#x1F1F9;</span> +370
+              </div>
+              <div class="form-input-wrapper" style="flex: 1;">
+                <input type="tel" class="form-input phone-input__number form-input--with-icon" placeholder="Number">
+                <span class="input-icon">&#x1F4DE;</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <div class="form-input-wrapper">
+              <input type="email" id="email" class="form-input form-input--with-icon" placeholder="Enter your email address">
+              <span class="input-icon">&#x2709;</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>If you would like this authorisation to be temporary, please select an end date</label>
+            <div class="date-inputs">
+              <input type="text" class="form-input" placeholder="dd" maxlength="2" style="max-width: 80px;">
+              <input type="text" class="form-input" placeholder="mm" maxlength="2" style="max-width: 80px;">
+              <input type="text" class="form-input" placeholder="yyyy" maxlength="4" style="max-width: 100px;">
+              <button type="button" class="calendar-btn" aria-label="Open calendar">&#x1F4C5;</button>
+            </div>
+          </div>
+
+          <!-- Signature -->
+          <div class="form-group">
+            <label style="font-size: var(--font-size-xl); font-weight: 700;">Signature</label>
+
+            <div style="background: var(--wr-cream-dark); border-radius: var(--radius-lg); padding: var(--space-lg);">
+              <div class="signature-tabs">
+                <button type="button" class="active">Draw</button>
+                <button type="button">Type</button>
+                <button type="button">Upload</button>
+              </div>
+              <div class="signature-pad"></div>
+              <p class="text-sm text-grey" style="text-align: center; margin-bottom: var(--space-md);">Clear signature</p>
+
+              <div class="consent-row">
+                <input type="checkbox" id="consent" class="consent-check">
+                <label for="consent" class="text-sm">
+                  I consent<br>
+                  <span class="text-grey">I consent to this process, which is separate from granting permission for the main policyholder to view dependants' information within the William Russell member portal.</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div style="display: flex; align-items: center; gap: var(--space-lg); margin-top: var(--space-xl); flex-wrap: wrap;">
+            <a href="plan-health-view.html" class="text-grey text-sm">&lt; Back</a>
+            <button type="submit" class="btn btn--primary btn--lg">Submit and confirm details &#x2192;</button>
+            <button type="button" class="btn btn--outline btn--lg">Save and return later &#x270E;</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

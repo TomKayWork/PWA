@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Your Plan - Life - William Russell</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="topbar__mobile-menu" aria-label="Menu">&#x2630;</button>
+    <a href="dashboard.html" class="topbar__logo">William Russell<span class="dot"></span></a>
+    <div class="topbar__actions">
+      <button class="topbar__referral">Earn US$100</button>
+      <button class="topbar__icon-btn" aria-label="Notifications">&#x1F514;<span class="badge">2</span></button>
+      <button class="topbar__icon-btn" aria-label="Call us">&#x1F4DE;</button>
+      <button class="topbar__user"><span class="topbar__avatar">NS</span><span>Name Surname</span><span>&#x203A;</span></button>
+    </div>
+  </header>
+
+  <div class="app-layout">
+    <nav class="sidebar" aria-label="Main navigation">
+      <button class="sidebar__collapse" aria-label="Collapse sidebar">&#x2039;</button>
+      <button class="sidebar__submit-claim">Submit a claim</button>
+      <div class="sidebar__nav">
+        <a href="dashboard.html" class="sidebar__nav-item sidebar__nav-item--active"><span>&#x1F4CA; Dashboard</span><span class="sidebar__nav-arrow">&#x203A;</span></a>
+        <a href="claims.html" class="sidebar__nav-item"><span>&#x1F4CB; Claims</span><span class="sidebar__nav-arrow">&#x203A;</span></a>
+        <a href="#" class="sidebar__nav-item"><span>&#x1F4C4; Documents</span><span class="sidebar__nav-arrow">&#x203A;</span></a>
+        <a href="#" class="sidebar__nav-item"><span>&#x2B50; Elevate</span><span class="sidebar__nav-arrow">&#x203A;</span></a>
+      </div>
+      <div class="sidebar__footer">
+        <div class="sidebar__emergency"><strong>24hr multilingual emergency helpline</strong>+44 (0) 1243 621 155</div>
+        <button class="sidebar__logout">&#x2190; Log out</button>
+      </div>
+    </nav>
+
+    <main class="main-content">
+      <div class="main-content__inner">
+        <div class="breadcrumbs">
+          <a href="dashboard.html">Dashboard</a>
+          <span class="breadcrumbs__sep">&gt;</span>
+          <a href="plan-life-view.html">View plan details</a>
+          <span class="breadcrumbs__sep">&gt;</span>
+          <span class="breadcrumbs__current">Manage your plan</span>
+        </div>
+
+        <!-- Manage Header -->
+        <div style="background: var(--wr-cream-dark); border-radius: var(--radius-lg); padding: var(--space-xl); margin-bottom: var(--space-xl);">
+          <div style="display: flex; align-items: center; gap: var(--space-md); margin-bottom: var(--space-lg);">
+            <span style="font-size: 2.5rem;">&#x1F91D;</span>
+            <h1 style="font-size: var(--font-size-xl); font-weight: 600;">Manage your International Life Plan</h1>
+          </div>
+
+          <div class="tabs">
+            <button class="tabs__tab tabs__tab--active" data-tab="tab-your-plan-life">Your plan</button>
+            <button class="tabs__tab" data-tab="tab-beneficiaries">Beneficiaries</button>
+            <button class="tabs__tab" data-tab="tab-renewal-life">Renewal</button>
+          </div>
+
+          <div class="checklist">
+            <div class="checklist__item">
+              <span class="checklist__icon">&#x2714;</span>
+              View your full <a href="#">terms of use</a> and <a href="#">privacy policy</a>
+            </div>
+            <div class="checklist__item">
+              <span class="checklist__icon">&#x2714;</span>
+              Upgrade your health plan
+            </div>
+            <div class="checklist__item">
+              <span class="checklist__icon">&#x2714;</span>
+              Frequently asked <a href="#">questions</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="tab-your-plan-life" class="tab-panel tab-panel--active">
+          <!-- Manage your life benefits -->
+          <h2 class="section-heading"><span class="section-heading__icon">&#x1F6E1;</span> Manage your life benefits</h2>
+
+          <div class="category-divider">Life Insurance</div>
+
+          <div class="accordion">
+            <div class="accordion__item accordion__item--open">
+              <button class="accordion__trigger">Increase your life benefit <span class="accordion__icon">+</span></button>
+              <div class="accordion__content">
+                <p>At renewal, you can apply to increase your benefit within your limit. The increase isn't automatic&mdash;you'll need to complete an application form, and your premium will be updated based on the new benefit.</p>
+                <div class="benefit-row">
+                  <span>Remaining annual limit</span>
+                  <span style="font-weight: 600;">US$1,000</span>
+                </div>
+                <div class="progress-bar" style="margin-bottom: var(--space-md);">
+                  <div class="progress-bar__fill" style="width: 85%;"></div>
+                </div>
+                <div class="manage-link"><a href="#">Complete an application form &#x2197;</a></div>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__trigger">Increase your accidental death &amp; permanent disablement benefit <span class="accordion__icon">+</span></button>
+              <div class="accordion__content"><p>Details about increasing AD&amp;PD benefit.</p></div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__trigger">Increase your adult critical illness benefit <span class="accordion__icon">+</span></button>
+              <div class="accordion__content"><p>Details about increasing critical illness benefit.</p></div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__trigger">Add a child(ren) to be covered by the Child critical illness benefit <span class="accordion__icon">+</span></button>
+              <div class="accordion__content"><p>Details about adding children to coverage.</p></div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__trigger">Add Funeral Costs &amp; Repatriation benefit <span class="accordion__icon">+</span></button>
+              <div class="accordion__content"><p>Details about adding funeral costs benefit.</p></div>
+            </div>
+          </div>
+
+          <div class="category-divider">Income Protection</div>
+
+          <div class="accordion">
+            <div class="accordion__item accordion__item--open">
+              <button class="accordion__trigger">Increase your income protection <span class="accordion__icon">+</span></button>
+              <div class="accordion__content">
+                <p>At renewal, you can increase your annual income benefit by up to 10% (up to US$5,000) without submitting an application form or further medical underwriting. Your annual income benefit can never exceed US$144,000.</p>
+                <div class="benefit-row">
+                  <span>Remaining annual limit</span>
+                  <span style="font-weight: 600;">US$1,000</span>
+                </div>
+                <div class="progress-bar" style="margin-bottom: var(--space-md);">
+                  <div class="progress-bar__fill" style="width: 85%;"></div>
+                </div>
+                <div class="manage-link"><a href="#">Complete an application form &#x2197;</a></div>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__trigger">Change deferment period <span class="accordion__icon">+</span></button>
+              <div class="accordion__content"><p>Details about changing deferment period.</p></div>
+            </div>
+          </div>
+
+          <!-- Tailor your plan -->
+          <h2 class="section-heading"><span class="section-heading__icon">&#x2699;</span> Tailor your plan</h2>
+
+          <div class="accordion">
+            <div class="accordion__item">
+              <button class="accordion__trigger">Change your occupation details <span class="accordion__icon">+</span></button>
+              <div class="accordion__content"><p>Details about occupation changes.</p></div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__trigger">Tell us if you plan to participate in any sporting or recreational activity that meet our definition of hazardous. <span class="accordion__icon">+</span></button>
+              <div class="accordion__content"><p>Details about hazardous activities.</p></div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__trigger">Update payment frequency <span class="accordion__icon">+</span></button>
+              <div class="accordion__content"><p>Details about payment frequency.</p></div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__trigger">Update payment method <span class="accordion__icon">+</span></button>
+              <div class="accordion__content"><p>Details about payment method.</p></div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__trigger">Request policy reinstatement <span class="accordion__icon">+</span></button>
+              <div class="accordion__content"><p>Details about policy reinstatement.</p></div>
+            </div>
+          </div>
+
+          <!-- FAQ -->
+          <h2 class="section-heading"><span class="section-heading__icon">&#x2753;</span> Frequently asked questions</h2>
+
+          <div class="accordion">
+            <div class="accordion__item">
+              <button class="accordion__trigger">What are ... <span class="accordion__icon">+</span></button>
+              <div class="accordion__content"><p>Answer to the question.</p></div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__trigger">What is ... <span class="accordion__icon">+</span></button>
+              <div class="accordion__content"><p>Answer to the question.</p></div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__trigger">Why should ... <span class="accordion__icon">+</span></button>
+              <div class="accordion__content"><p>Answer to the question.</p></div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__trigger">Where can ... <span class="accordion__icon">+</span></button>
+              <div class="accordion__content"><p>Answer to the question.</p></div>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn--ghost">Show all &#x2197;</a>
+        </div>
+
+        <div id="tab-beneficiaries" class="tab-panel">
+          <p>Beneficiaries content goes here.</p>
+        </div>
+
+        <div id="tab-renewal-life" class="tab-panel">
+          <p>Renewal information goes here.</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div class="bottom-toolbar">
+    <button class="bottom-toolbar__item">&#x1F3E5; Medical Network</button>
+    <button class="bottom-toolbar__item">&#x1F4B3; Reimbursement card details</button>
+    <button class="bottom-toolbar__item">&#x2705; Insurance Certificate</button>
+    <button class="bottom-toolbar__more">&#x2026;</button>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

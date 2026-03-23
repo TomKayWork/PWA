@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Plan Details - Life - William Russell</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="topbar__mobile-menu" aria-label="Menu">&#x2630;</button>
+    <a href="dashboard.html" class="topbar__logo">William Russell<span class="dot"></span></a>
+    <div class="topbar__actions">
+      <button class="topbar__referral">Earn US$100</button>
+      <button class="topbar__icon-btn" aria-label="Notifications">&#x1F514;<span class="badge">2</span></button>
+      <button class="topbar__icon-btn" aria-label="Call us">&#x1F4DE;</button>
+      <button class="topbar__user"><span class="topbar__avatar">NS</span><span>Name Surname</span><span>&#x203A;</span></button>
+    </div>
+  </header>
+
+  <div class="app-layout">
+    <nav class="sidebar" aria-label="Main navigation">
+      <button class="sidebar__collapse" aria-label="Collapse sidebar">&#x2039;</button>
+      <button class="sidebar__submit-claim">Submit a claim</button>
+      <div class="sidebar__nav">
+        <a href="dashboard.html" class="sidebar__nav-item sidebar__nav-item--active"><span>&#x1F4CA; Dashboard</span><span class="sidebar__nav-arrow">&#x203A;</span></a>
+        <a href="claims.html" class="sidebar__nav-item"><span>&#x1F4CB; Claims</span><span class="sidebar__nav-arrow">&#x203A;</span></a>
+        <a href="#" class="sidebar__nav-item"><span>&#x1F4C4; Documents</span><span class="sidebar__nav-arrow">&#x203A;</span></a>
+        <a href="#" class="sidebar__nav-item"><span>&#x2B50; Elevate</span><span class="sidebar__nav-arrow">&#x203A;</span></a>
+      </div>
+      <div class="sidebar__footer">
+        <div class="sidebar__emergency"><strong>24hr multilingual emergency helpline</strong>+44 (0) 1243 621 155</div>
+        <button class="sidebar__logout">&#x2190; Log out</button>
+      </div>
+    </nav>
+
+    <main class="main-content">
+      <div class="main-content__inner">
+        <div class="breadcrumbs">
+          <a href="dashboard.html">Dashboard</a>
+          <span class="breadcrumbs__sep">&gt;</span>
+          <span class="breadcrumbs__current">View plan details</span>
+        </div>
+
+        <!-- Life Plan Header -->
+        <div class="plan-header plan-header--life">
+          <div class="plan-header__top">
+            <div class="plan-header__identity">
+              <div class="plan-header__illustration">&#x1F91D;</div>
+              <div>
+                <div class="plan-header__name">Name Surname</div>
+                <div class="plan-header__id">WR5683401</div>
+              </div>
+            </div>
+            <a href="plan-life-manage.html" class="plan-header__action-link">Manage &#x270E;</a>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-md);">
+            <div class="plan-header__plan-info">
+              <span class="icon">&#x2665;</span>
+              Life Benefit
+            </div>
+            <div class="plan-header__limit">US$1,000,000</div>
+          </div>
+          <div class="plan-header__tags">
+            <span class="plan-tag">Accidental Death &amp; Permanent Disablement</span>
+            <span class="plan-tag">Adult Critical Illness</span>
+            <span class="plan-tag">Child Critical Illness</span>
+            <span class="plan-tag">Funeral Costs &amp; Repatriation</span>
+          </div>
+        </div>
+
+        <!-- Life Plan Meta -->
+        <div class="plan-meta">
+          <div class="plan-meta__premium">
+            <div class="value">$600/mo</div>
+            <div class="label text-grey text-sm">Current premium</div>
+          </div>
+          <div class="plan-meta__renewal">
+            <span>&#x23F0;</span>
+            <div>
+              <div>Renewal in 186 days</div>
+              <div class="text-grey text-sm">11 Feb 2025 - 10 Feb 2026</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Income Protection Plan Header -->
+        <div class="plan-header plan-header--income" style="margin-top: var(--space-lg);">
+          <div class="plan-header__top">
+            <div class="plan-header__identity">
+              <div class="plan-header__illustration">&#x1F4BC;</div>
+              <div>
+                <div class="plan-header__name">Name Surname</div>
+                <div class="plan-header__id">WR5683401</div>
+              </div>
+            </div>
+            <a href="#" class="plan-header__action-link">Manage &#x270E;</a>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-md);">
+            <div class="plan-header__plan-info">
+              <span class="icon">&#x1F4BC;</span>
+              Income Protection Benefit Limit
+            </div>
+            <div class="plan-header__limit">US$XX,XXX</div>
+          </div>
+          <div class="plan-header__tags">
+            <span class="plan-tag">3 month deferment period</span>
+          </div>
+        </div>
+
+        <!-- Income Protection Plan Meta -->
+        <div class="plan-meta">
+          <div class="plan-meta__premium">
+            <div class="value">$600/mo</div>
+            <div class="label text-grey text-sm">Current premium</div>
+          </div>
+          <div class="plan-meta__renewal">
+            <span>&#x23F0;</span>
+            <div>
+              <div>Renewal in 186 days</div>
+              <div class="text-grey text-sm">11 Feb 2025 - 10 Feb 2026</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="quick-actions">
+          <button class="quick-action">
+            <span class="quick-action__icon quick-action__icon--blue">&#x1F465;</span>
+            View beneficiary details
+          </button>
+          <button class="quick-action">
+            <span class="quick-action__icon quick-action__icon--pink">&#x1F465;</span>
+            Appoint / manage a beneficiary
+          </button>
+          <button class="quick-action" onclick="window.location.href='third-party-auth.html'">
+            <span class="quick-action__icon quick-action__icon--green">&#x1F4DD;</span>
+            Authorise a third party
+          </button>
+        </div>
+
+        <!-- Plan Benefits - Life Insurance -->
+        <h2 class="section-heading"><span class="section-heading__icon">&#x1F6E1;</span> Plan benefits</h2>
+
+        <div class="category-divider">Life Insurance</div>
+
+        <div class="accordion">
+          <div class="accordion__item">
+            <button class="accordion__trigger">Life benefit <span class="accordion__icon">+</span></button>
+            <div class="accordion__content"><p>Details about the life benefit.</p></div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger">Accidental Death &amp; Permanent Disablement benefit <span class="accordion__icon">+</span></button>
+            <div class="accordion__content"><p>Details about AD&amp;PD benefit.</p></div>
+          </div>
+          <div class="accordion__item accordion__item--open">
+            <button class="accordion__trigger">Adult Critical Illness benefit <span class="accordion__icon">+</span></button>
+            <div class="accordion__content">
+              <p>The Adult Critical Illness benefit pays a lump sum if you're diagnosed with a covered illness, once the waiting period is over.</p>
+              <div class="benefit-row">
+                <span>Adult critical illness</span>
+                <span class="eligible">Eligible for use from 28 Sep</span>
+              </div>
+              <div class="benefit-row">
+                <span>Benefit ceases after claim</span>
+                <span style="font-weight: 600;">US$150,500</span>
+              </div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger">Child Critical Illness benefit <span class="accordion__icon">+</span></button>
+            <div class="accordion__content"><p>Details about child critical illness benefit.</p></div>
+          </div>
+          <div class="accordion__item accordion__item--open">
+            <button class="accordion__trigger">Funeral Costs &amp; Repatriation benefit <span class="accordion__icon">+</span></button>
+            <div class="accordion__content">
+              <p>We will pay a lump sum of US$5,000 if you die as the result of an event covered by your policy. This benefit is payable in addition to the life insurance benefit.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Income Protection -->
+        <div class="category-divider">Income Protection</div>
+
+        <div class="accordion">
+          <div class="accordion__item">
+            <button class="accordion__trigger">Income protection benefit <span class="accordion__icon">+</span></button>
+            <div class="accordion__content"><p>Details about income protection benefit.</p></div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger">Deferment period <span class="accordion__icon">+</span></button>
+            <div class="accordion__content"><p>Details about deferment period.</p></div>
+          </div>
+          <div class="accordion__item accordion__item--open">
+            <button class="accordion__trigger">Increase in benefit at renewal <span class="accordion__icon">+</span></button>
+            <div class="accordion__content">
+              <p>At renewal, you can increase your annual income benefit by up to 10% (up to US$5,000) without submitting an application form or further medical underwriting. Your annual income benefit can never exceed US$144,000.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Finishing Touches -->
+        <h2 class="section-heading"><span class="section-heading__icon">&#x2728;</span> Finishing touches of your plan</h2>
+
+        <div class="accordion">
+          <div class="accordion__item">
+            <button class="accordion__trigger">Payment frequency <span class="accordion__icon">+</span></button>
+            <div class="accordion__content"><p>Details about payment frequency.</p></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <aside class="right-rail">
+      <div class="right-rail__card" style="display: flex; align-items: center; gap: var(--space-md);">
+        <span style="font-size: 2rem;">&#x1F4B0;</span>
+        <div>
+          <h3>Early payment for terminal illness</h3>
+          <p>Choose how &amp; where to dispense the money.</p>
+        </div>
+      </div>
+      <div class="right-rail__card" style="display: flex; align-items: center; gap: var(--space-md);">
+        <span style="font-size: 2rem;">&#x274C;</span>
+        <div>
+          <h3>If you become unemployed</h3>
+          <p>Tell us as soon as you become unemployed.</p>
+        </div>
+      </div>
+
+      <h3 style="font-size: var(--font-size-lg); font-weight: 600; margin-top: var(--space-md);">Elevate complimentary services</h3>
+
+      <div class="right-rail__card right-rail__card--green">
+        <h3>Monitor your wellbeing</h3>
+        <p>Stay on track anywhere with wellbeing that travels with you</p>
+      </div>
+      <div class="right-rail__card right-rail__card--green">
+        <h3>Stay safe &amp; informed</h3>
+        <p>Stay one step ahead of global threats</p>
+      </div>
+    </aside>
+  </div>
+
+  <div class="bottom-toolbar">
+    <button class="bottom-toolbar__item">&#x1F3E5; Medical Network</button>
+    <button class="bottom-toolbar__item">&#x1F4B3; Reimbursement card details</button>
+    <button class="bottom-toolbar__item">&#x2705; Insurance Certificate</button>
+    <button class="bottom-toolbar__more">&#x2026;</button>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

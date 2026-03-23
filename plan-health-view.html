@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Plan Details - Health - William Russell</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Top Bar -->
+  <header class="topbar">
+    <button class="topbar__mobile-menu" aria-label="Menu">&#x2630;</button>
+    <a href="dashboard.html" class="topbar__logo">William Russell<span class="dot"></span></a>
+    <div class="topbar__actions">
+      <button class="topbar__referral">Earn US$100</button>
+      <button class="topbar__icon-btn" aria-label="Notifications">&#x1F514;<span class="badge">2</span></button>
+      <button class="topbar__icon-btn" aria-label="Call us">&#x1F4DE;</button>
+      <button class="topbar__user"><span class="topbar__avatar">NS</span><span>Name Surname</span><span>&#x203A;</span></button>
+    </div>
+  </header>
+
+  <div class="app-layout">
+    <!-- Sidebar -->
+    <nav class="sidebar" aria-label="Main navigation">
+      <button class="sidebar__collapse" aria-label="Collapse sidebar">&#x2039;</button>
+      <button class="sidebar__submit-claim">Submit a claim</button>
+      <div class="sidebar__nav">
+        <a href="dashboard.html" class="sidebar__nav-item sidebar__nav-item--active"><span>&#x1F4CA; Dashboard</span><span class="sidebar__nav-arrow">&#x203A;</span></a>
+        <a href="claims.html" class="sidebar__nav-item"><span>&#x1F4CB; Claims</span><span class="sidebar__nav-arrow">&#x203A;</span></a>
+        <a href="#" class="sidebar__nav-item"><span>&#x1F4C4; Documents</span><span class="sidebar__nav-arrow">&#x203A;</span></a>
+        <a href="#" class="sidebar__nav-item"><span>&#x2B50; Elevate</span><span class="sidebar__nav-arrow">&#x203A;</span></a>
+      </div>
+      <div class="sidebar__footer">
+        <div class="sidebar__emergency"><strong>24hr multilingual emergency helpline</strong>+44 (0) 1243 621 155</div>
+        <button class="sidebar__logout">&#x2190; Log out</button>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="main-content__inner">
+        <div class="breadcrumbs">
+          <a href="dashboard.html">Dashboard</a>
+          <span class="breadcrumbs__sep">&gt;</span>
+          <span class="breadcrumbs__current">View plan details</span>
+        </div>
+
+        <!-- Plan Header -->
+        <div class="plan-header plan-header--health">
+          <div class="plan-header__top">
+            <div class="plan-header__identity">
+              <div class="plan-header__illustration">&#x1F3E5;</div>
+              <div>
+                <div class="plan-header__name">Name Surname</div>
+                <div class="plan-header__id">WR5683401</div>
+              </div>
+            </div>
+            <div style="text-align: right;">
+              <a href="plan-health-manage.html" class="plan-header__action-link">Manage &#x270E;</a>
+            </div>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-md);">
+            <div class="plan-header__plan-info">
+              <span class="icon">&#x2665;</span>
+              Silver Plan &ndash; Annual Benefit Limit
+            </div>
+            <div class="plan-header__limit">US$2,500,000</div>
+          </div>
+          <div class="plan-header__tags">
+            <span class="plan-tag">Zone 1</span>
+            <span class="plan-tag">Nil excess</span>
+            <span class="plan-tag">Semi-private hospital room</span>
+            <span class="plan-tag">Additional benefit 1</span>
+            <span class="plan-tag">Additional benefit 2</span>
+            <span class="plan-tag">Medevac Plus</span>
+          </div>
+        </div>
+
+        <!-- Plan Meta -->
+        <div class="plan-meta">
+          <div class="plan-meta__premium">
+            <div class="value">US$XXX/mo</div>
+            <div class="label text-grey text-sm">Current premium</div>
+          </div>
+          <div class="plan-meta__renewal">
+            <span>&#x23F0;</span>
+            <div>
+              <div>Renewal in 186 days</div>
+              <div class="text-grey text-sm">11 Feb 2025 - 10 Feb 2026</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="quick-actions">
+          <button class="quick-action" onclick="window.location.href='dependants.html'">
+            <span class="quick-action__icon quick-action__icon--blue">&#x1F465;</span>
+            View dependants' details
+          </button>
+          <button class="quick-action" onclick="window.location.href='dependants.html'">
+            <span class="quick-action__icon quick-action__icon--pink">&#x1F465;</span>
+            Manage dependants' access
+          </button>
+          <button class="quick-action" onclick="window.location.href='third-party-auth.html'">
+            <span class="quick-action__icon quick-action__icon--green">&#x1F4DD;</span>
+            Authorise a third party
+          </button>
+        </div>
+
+        <!-- Plan Benefits -->
+        <h2 class="section-heading"><span class="section-heading__icon">&#x1F6E1;</span> Plan benefits</h2>
+
+        <div class="accordion">
+          <div class="accordion__item">
+            <button class="accordion__trigger">Mental health treatment <span class="accordion__icon">+</span></button>
+            <div class="accordion__content"><p>Details about mental health treatment coverage.</p></div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger">Accidental death benefit <span class="accordion__icon">+</span></button>
+            <div class="accordion__content"><p>Details about accidental death benefit coverage.</p></div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger">Primary medical care for outpatient treatment <span class="accordion__icon">+</span></button>
+            <div class="accordion__content"><p>Details about primary medical care coverage.</p></div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger">Preventive health and well-being <span class="accordion__icon">+</span></button>
+            <div class="accordion__content"><p>Details about preventive health coverage.</p></div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger">Emergency restorative treatment you receive as an outpatient <span class="accordion__icon">+</span></button>
+            <div class="accordion__content"><p>Details about emergency restorative treatment.</p></div>
+          </div>
+          <div class="accordion__item accordion__item--open">
+            <button class="accordion__trigger">Dental costs <span class="accordion__icon">+</span></button>
+            <div class="accordion__content">
+              <p style="margin-bottom: var(--space-sm);">Emergency restorative treatment you receive as an outpatient</p>
+              <div class="benefit-row">
+                <span>Remaining annual limit</span>
+                <span style="font-weight: 600;">US$1,000</span>
+              </div>
+              <div class="benefit-row">
+                <span>Dental costs</span>
+                <span class="eligible">Eligible for use from 28 Sep</span>
+              </div>
+              <div class="benefit-row">
+                <span>Remaining annual limit</span>
+                <span style="font-weight: 600;">US$1,500</span>
+              </div>
+              <p style="margin-top: var(--space-md); font-weight: 500;">Benefits include:</p>
+              <ul>
+                <li>Screening - twice per year</li>
+                <li>Scaling and polishing and sealing - twice per year</li>
+                <li>Fillings (both composite and amalgam)</li>
+                <li>Simple extractions</li>
+                <li>Root canal treatment</li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger">Maternity costs <span class="accordion__icon">+</span></button>
+            <div class="accordion__content"><p>Details about maternity coverage.</p></div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger">Medevac Basic <span class="accordion__icon">+</span></button>
+            <div class="accordion__content"><p>Details about medevac basic coverage.</p></div>
+          </div>
+        </div>
+
+        <!-- Finishing Touches -->
+        <h2 class="section-heading"><span class="section-heading__icon">&#x2728;</span> Finishing touches of your plan</h2>
+
+        <div class="accordion">
+          <div class="accordion__item">
+            <button class="accordion__trigger">Coverage area <span class="accordion__icon">+</span></button>
+            <div class="accordion__content"><p>Details about your coverage area.</p></div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger">Excess <span class="accordion__icon">+</span></button>
+            <div class="accordion__content"><p>Details about your excess/deductible.</p></div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger">Underwriting <span class="accordion__icon">+</span></button>
+            <div class="accordion__content"><p>Details about underwriting.</p></div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger">Payment frequency <span class="accordion__icon">+</span></button>
+            <div class="accordion__content"><p>Details about payment frequency.</p></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Right Rail -->
+    <aside class="right-rail">
+      <div class="right-rail__card card--clickable">
+        <div style="display: flex; align-items: center; gap: var(--space-md); margin-bottom: var(--space-sm);">
+          <span style="font-size: 2rem;">&#x1F3E5;</span>
+          <div>
+            <h3 style="margin-bottom: 0;">Medical network</h3>
+            <p>See where you can receive treatment</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="font-size: var(--font-size-lg); font-weight: 600; margin-bottom: var(--space-md);">Elevate complimentary services</h3>
+
+      <div class="right-rail__card right-rail__card--green">
+        <h3>Your doctor online</h3>
+        <p>For expats on the go, manage your health from anywhere</p>
+      </div>
+      <div class="right-rail__card right-rail__card--green">
+        <h3>Monitor your wellbeing</h3>
+        <p>Stay on track anywhere with wellbeing that travels with you</p>
+      </div>
+      <div class="right-rail__card right-rail__card--green">
+        <h3>Stay safe &amp; informed</h3>
+        <p>Stay one step ahead of global threats</p>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Bottom Toolbar -->
+  <div class="bottom-toolbar">
+    <button class="bottom-toolbar__item">&#x1F3E5; Medical Network</button>
+    <button class="bottom-toolbar__item">&#x1F4B3; Reimbursement card details</button>
+    <button class="bottom-toolbar__item">&#x2705; Insurance Certificate</button>
+    <button class="bottom-toolbar__more">&#x2026;</button>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
