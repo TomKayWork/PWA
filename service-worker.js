@@ -2,12 +2,10 @@ self.addEventListener('install', function(e) {
     console.log('[Service Worker] Install');
 });
 
-var cacheName = 'v1';
+var cacheName = 'v2';
 var appShellFiles = [
-    './PWA',
     './PWA/index.html',
-    './PWA/dashboard.html',
-    './blog.html',
+    './PWA/dashboard.html'
 ];
 
 self.addEventListener('install', function(e) {
