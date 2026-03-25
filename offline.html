@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offline - William Russell Member Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+    <script>
+   if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js', {
+    scope: '/PWA/'
+  });
+  }
+    </script>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="PWA Example">
+    <link rel="apple-touch-icon" href="icon-152x152.png">
+    <meta name="msapplication-TileImage" content="icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+
+  
+</head>
+<body>
+  <header class="topbar">
+    <button class="topbar__mobile-menu" aria-label="Menu">&#x2630;</button>
+    <a href="dashboard.html" class="topbar__logo">William Russell<span class="dot"></span></a>
+
+  </header>
+
+  <div class="app-layout">
+    <!-- Sidebar -->
+    <nav class="sidebar" aria-label="Main navigation">
+     
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="main-content__inner">
+        <h1>No internet?</h1>
+        <p>Connection error, this could be because your device can not access the internet.</p>
+        <p>Don't worry, William Russell can service your account over the phone and we are avaiable 24/7</p>
+        <p><strong>(44 (0) 1243 621 155</strong></p>
+      </div>
+    </main>
+
+    <!-- Right Rail -->
+
+  </div>
+
+</body>
+</html>
